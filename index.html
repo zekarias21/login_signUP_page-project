@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>simple sign up and login page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <h1 class="logo">@zack</h1>
+            <nav class="navigation">
+                <a href="a">Home</a>
+                <a href="a">About</a>
+                <a href="a">Service</a>
+                <a href="a">Contact</a>
+                <button class="btn-login-popup">login</button>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+
+            <!-- login form -->
+            <div  class="form-box login">
+                <h2>Login</h2>
+                <!-- create interactive form -->
+                <form action="#"><!--action attribute show url where data submitted,#reload or stay-->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required> <!--required ensure can't empty-->
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required> <!--required ensure can't empty-->
+                        <label>Password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">remember-me</label>
+                        <a href="#">forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn">Login</button>
+                    
+                    <div class="login-register">
+                        <p>Don't have an Account?<a href="#" class="register-link">Register here</a></p>
+                    </div>
+                </form> 
+            </div> 
+            
+            <!-- registration form -->
+            <div  class="form-box register">
+                <h2>Registration</h2>
+                <!-- create interactive form -->
+                <form action="#">
+                    <!--action attribute show url where data submitted,#reload or stay-->
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <input type="text" required> <!--required ensure can't empty-->
+                        <label>Username</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required> <!--required ensure can't empty-->
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required> <!--required ensure can't empty-->
+                        <label>Password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                        <a href="#">forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn">Register</button>
+                    
+                    <div class="login-register">
+                        <p>Already have an Account?<a href="#" class="login-link">Login here</a></p>
+                    </div>
+                    <!-- we use this(class="login-link)  name to link with login page done by js-->
+                </form>
+            </div>
+        </div>
+
+        <script src='script.js'></script>
+
+        <!-- icon installation from ionic google -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
